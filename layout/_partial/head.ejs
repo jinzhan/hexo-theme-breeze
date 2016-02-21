@@ -52,7 +52,8 @@
 
   <% if (is_post()){ %>
 <style>
-    /* 新增自定义样式 */
+/* 新增自定义样式 */
+@media screen and (min-width: 800px) {
     body {
         background:#fff!important;
     }
@@ -133,6 +134,13 @@
     #article-nav:hover,#article-nav {
         background: #999;
     }
+}
+
+@media screen and (max-width: 800px) {
+  #container #mobile-nav .overlay {
+    height: 0;
+  }
+}
 </style>
   <% } %>
 
